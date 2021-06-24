@@ -13,7 +13,6 @@
   <body>
     <div class="container">
         <h1>Lista de Diárias</h1>
-        
 
         <table class="table">
             <thead>
