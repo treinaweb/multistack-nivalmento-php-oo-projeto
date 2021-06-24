@@ -1,0 +1,16 @@
+{
+  "name": "treinaweb/php-oo-projeto",
+  "type": "project",
+  "authors": [
+    {
+      "name": "Elton Fonseca",
+      "email": "elton869@gmail.com"
+    }
+  ],
+  "require": {},
+  "autoload": {
+    "psr-4": {
+      "App\\": "src/"
+    }
+  }
+}
