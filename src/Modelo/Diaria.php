@@ -4,13 +4,13 @@ namespace App\Modelo;
 
 class Diaria
 {
-    private $data;
+    public $data;
 
-    private $tempo;
+    public $tempo;
 
-    private Diarista $diarista;
+    public Diarista $diarista;
 
-    private Cliente $cliente;
+    public Cliente $cliente;
 
     public function __construct($data, $tempo, Diarista $diarista, Cliente $cliente)
     {
@@ -18,5 +18,29 @@ class Diaria
         $this->data = $data;
         $this->diarista = $diarista;
         $this->cliente = $cliente;
+    }
+
+    static public function obterTodas()
+    {
+        return [
+            new self(
+                '20/10/2021',
+                8,
+                new Diarista('João'),
+                new Cliente('Maria')
+            ),
+            new self(
+                '21/10/2021',
+                4,
+                new Diarista('Pedro'),
+                new Cliente('Elton')
+            ),
+            new self(
+                '22/10/2021',
+                6,
+                new Diarista('Luciane'),
+                new Cliente('Daniel')
+            ),
+        ];
     }
 }
